@@ -1,3 +1,43 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+$cv-section-margin-top: 100px;
+$base-margin: 20px;
+$base-padding: 10px;
+
+.main {
+  @include flex-layout(column, flex-start, center);
+}
+
+.cv-section {
+  margin-top: $cv-section-margin-top;
+  background-color: $white;
+  width: 90%;
+  padding: 0 $base-padding * 2;
+}
+
+.cv-section-header {
+  @include flex-layout(column, flex-start, center);
+}
+
+.avatar-img {
+  height: $image-size;
+  width: $image-size;
+  border-radius: 50%;
+  margin-top: -$image-size / 2;
+}
+
+.hello-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hr {
+  color: $gray-light;
+  width: 100%;
+}
+
+.red-title-h3 {
+  color: $primary-color;
+}

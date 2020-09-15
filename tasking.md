@@ -15,7 +15,6 @@
     - cv section
 - layout:
 - surface:
-    - bg-color: $white
 
 ## cv section
 
@@ -36,6 +35,7 @@
     - h2 description
 - layout:
     - vertical arrangement
+    - horizontal center
 - surface:
     - border-bottom
     
