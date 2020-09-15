@@ -1,6 +1,6 @@
-const parseUrlForUserId = () => {
-  const lastIndex = window.location.href.lastIndexOf("/");
-  return window.location.href.substring(lastIndex + 1);
+const parseUrlForUserId = (url) => {
+  const lastIndex = url.lastIndexOf("/");
+  return parseInt(url.substring(lastIndex + 1), 10);
 };
 
 export default parseUrlForUserId;
