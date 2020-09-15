@@ -25,10 +25,10 @@ $(document).ready(() => {
       const educationList = response.data;
       $("#education-div").append(
         educationList.map((education) => {
-          return `<div class="experience-div" id="experience-div">
-                    <span>${education.year}</span>
+          return `<div class="experience-div">
+                    <span class="year-span">${education.year}</span>
                     <div class="experience-description-div">
-                      <h4>${education.title}</h4>
+                      <h4 class="education-title-h4">${education.title}</h4>
                       <p>${education.description}</p>
                     </div>
                   </div>`;

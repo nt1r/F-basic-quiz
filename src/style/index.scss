@@ -2,7 +2,6 @@
 @import "mixins";
 @import "reboot";
 
-$cv-section-margin-top: 100px;
 $base-margin: 20px;
 $base-padding: 10px;
 
@@ -11,7 +10,8 @@ $base-padding: 10px;
 }
 
 .cv-section {
-  margin-top: $cv-section-margin-top;
+  margin-top: $base-margin * 5;
+  margin-bottom: $base-margin * 3;
   background-color: $white;
   width: 90%;
   padding: 0 $base-padding * 2;
@@ -38,6 +38,33 @@ $base-padding: 10px;
   width: 100%;
 }
 
+.about-me-div {
+  margin-bottom: $base-margin * 2;
+}
+
 .red-title-h3 {
   color: $primary-color;
+}
+
+.education-div {
+  padding-bottom: $base-padding * 2;
+}
+
+.experience-div {
+  @include flex-layout(row, space-between);
+  margin-bottom: $base-margin;
+}
+
+.year-span {
+  font-size: 1.2em;
+}
+
+.experience-description-div {
+  width: 90%;
+  background-color: $gray-light;
+  padding-left: $base-padding;
+}
+
+.education-title-h4 {
+  margin-top: $base-margin / 4 0;
 }
