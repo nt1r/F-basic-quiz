@@ -30,6 +30,8 @@ function appendEducationElements(response) {
   const educationList = response.data;
   $("#education-div").append(
     educationList.map((education) => {
+      // TODO feedback: experience-div用ul li更符合语义
+      // TODO feedback: div修饰命名不合理
       return `<div class="experience-div">
                     <span class="year-span">${education.year}</span>
                     <div class="experience-description-div">
